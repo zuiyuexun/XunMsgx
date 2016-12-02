@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="80dp"
+    tools:context=".ui.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <com.xunyue.xunmsg.xunmsg.view.CircleImageView
+            android:id="@+id/iv_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:border_width="2dp"
+            android:src="@mipmap/photo"/>
+
+    </LinearLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/til_user_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:errorEnabled="true"
+        app:hintTextAppearance="@style/HintAppearance"
+        app:errorTextAppearance="@style/ErrorAppearance">
+        <EditText
+            android:id="@+id/et_user_name"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:paddingLeft="8dp"
+            android:singleLine="true"
+            android:textColor="@color/colorAccent"
+            android:hint="用户名/邮箱"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            app:errorEnabled="true"
+            android:orientation="horizontal"
+            app:hintTextAppearance="@style/HintAppearance"
+            app:errorTextAppearance="@style/ErrorAppearance">
+            <EditText
+                android:id="@+id/et_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:paddingLeft="8dp"
+                android:singleLine="true"
+                android:inputType="textPassword"
+                android:textColor="@color/colorAccent"
+                android:hint="密码"/>
+
+
+        </android.support.design.widget.TextInputLayout>
+
+
+    </RelativeLayout>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/tv_login"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_weight="1.0"
+            android:background="@drawable/btn_selecort"
+            android:gravity="center"
+            android:enabled="false"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:text="登陆"/>
+
+        <View
+            android:layout_width="16dp"
+            android:layout_height="1dp"/>
+
+        <Button
+            android:id="@+id/tv_register"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_weight="1.0"
+            android:background="@drawable/btn_selecort"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:text="注册"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp">
+        <CheckBox
+            android:id="@+id/cb_remember_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="记住密码"/>
+
+        <TextView
+            android:id="@+id/tv_forget_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/blue"
+            android:text="忘记密码"/>
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

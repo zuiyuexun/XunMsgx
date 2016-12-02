@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="36dp"
+    tools:context=".ui.RegisterActivity">
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/til_user_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:counterEnabled="true"
+        app:counterMaxLength="6"
+        app:counterOverflowTextAppearance="@style/HintAppearance"
+        app:counterTextAppearance="@style/counterTextAppearance"
+        app:errorEnabled="true"
+        app:errorTextAppearance="@style/ErrorAppearance"
+        app:hintTextAppearance="@style/HintAppearance">
+
+        <EditText
+            android:id="@+id/et_user_name"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="用户名"
+            android:paddingLeft="8dp"
+            android:singleLine="true"
+            android:textColor="@color/colorAccent" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/til_eamil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:errorEnabled="true"
+        app:errorTextAppearance="@style/ErrorAppearance"
+        app:hintTextAppearance="@style/HintAppearance">
+
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="邮箱"
+            android:paddingLeft="8dp"
+            android:singleLine="true"
+            android:textColor="@color/colorAccent" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/til_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:errorEnabled="true"
+        app:errorTextAppearance="@style/ErrorAppearance"
+        app:hintTextAppearance="@style/HintAppearance">
+
+        <EditText
+            android:id="@+id/et_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="密码"
+            android:paddingLeft="8dp"
+            android:singleLine="true"
+            android:textColor="@color/colorAccent" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/til_confirm_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:errorEnabled="true"
+        app:errorTextAppearance="@style/ErrorAppearance"
+        app:hintTextAppearance="@style/HintAppearance">
+
+        <EditText
+            android:id="@+id/et_confirm_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="确认密码"
+            android:inputType="textPassword"
+            android:paddingLeft="8dp"
+            android:singleLine="true"
+            android:textColor="@color/colorAccent" />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/bt_register"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/btn_selecort1"
+        android:gravity="center"
+        android:text="注册"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+</LinearLayout>
